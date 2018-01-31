@@ -18,6 +18,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.build.timestamp.format>EEE, MMM dd yyyy, HH:mm Z</maven.build.timestamp.format>
         <hapi.fhir.version>3.3.0-SNAPSHOT</hapi.fhir.version>
+        <hapi.fhir.overlay>3.2.0</hapi.fhir.overlay>
     </properties>
 
 	<dependencies>
@@ -65,7 +66,20 @@
             <artifactId>hapi-fhir-structures-dstu3</artifactId>
             <version>${hapi.fhir.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>ca.uhn.hapi.fhir</groupId>
+            <artifactId>hapi-fhir-testpage-overlay</artifactId>
+            <version>${hapi.fhir.overlay}</version>
+            <type>war</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>ca.uhn.hapi.fhir</groupId>
+            <artifactId>hapi-fhir-testpage-overlay</artifactId>
+            <version>${hapi.fhir.overlay}</version>
+            <classifier>classes</classifier>
+            <scope>provided</scope>
+        </dependency>
 
         <dependency>
 			<groupId>com.h2database</groupId>
@@ -83,7 +97,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>ca.uhn.hapi.fhir</groupId>
+            <artifactId>hapi-fhir-spring-boot-autoconfigure</artifactId>
+            <version>3.3.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
@@ -91,6 +110,18 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <overlays>
+                        <overlay>
+                            <groupId>ca.uhn.hapi.fhir</groupId>
+                            <artifactId>hapi-fhir-testpage-overlay</artifactId>
+                        </overlay>
+                    </overlays>
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 
