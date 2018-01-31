@@ -13,6 +13,13 @@
 
 	<packaging>jar</packaging>
 
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.build.timestamp.format>EEE, MMM dd yyyy, HH:mm Z</maven.build.timestamp.format>
+        <hapi.fhir.version>3.3.0-SNAPSHOT</hapi.fhir.version>
+    </properties>
+
 	<dependencies>
 		<!-- Compile -->
 		<dependency>
@@ -34,19 +41,33 @@
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-spring-boot-starter</artifactId>
-			<version>3.3.0-SNAPSHOT</version>
+            <version>${hapi.fhir.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-jpaserver-base</artifactId>
-			<version>3.3.0-SNAPSHOT</version>
+            <version>${hapi.fhir.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-jaxrsserver-base</artifactId>
-			<version>3.3.0-SNAPSHOT</version>
+            <version>${hapi.fhir.version}</version>
 		</dependency>
-		<dependency>
+
+        <!-- Added -->
+        <dependency>
+            <groupId>ca.uhn.hapi.fhir</groupId>
+            <artifactId>hapi-fhir-client</artifactId>
+            <version>${hapi.fhir.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ca.uhn.hapi.fhir</groupId>
+            <artifactId>hapi-fhir-structures-dstu3</artifactId>
+            <version>${hapi.fhir.version}</version>
+        </dependency>
+
+
+        <dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 		</dependency>
