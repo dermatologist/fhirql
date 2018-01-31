@@ -1,4 +1,18 @@
+server:
+    port: 8080
+    use-forward-headers: true
+    session:
+        cookie:
+            http-only: true
+    contextPath: /fhirql
+    tomcat:
+      max-threads: 600
+
 spring:
+  application:
+    name: fhirql
+  thymeleaf:
+    prefix: classpath:/WEB-INF/templates/
   jpa:
     hibernate:
       ddl-auto: create-drop
