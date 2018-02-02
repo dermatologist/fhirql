@@ -4,13 +4,13 @@ server:
     session:
         cookie:
             http-only: true
-    contextPath: /fhirql
+    contextPath: /fhir
     tomcat:
       max-threads: 600
 
 spring:
   application:
-    name: fhirql
+    name: fhir
   thymeleaf:
     prefix: classpath:/WEB-INF/templates/
   jpa:
@@ -51,3 +51,18 @@ hapi:
 management:
   security:
     enabled: false
+
+app:
+    localUrls:
+           - http://fhirtest.uhn.ca/baseDstu3
+           - http://sdk.canehealth.com/fhir/fhir/baseDstu3
+    data:
+        feed_on_start: true
+        headers:
+             ODA-INSTANCE-ID: oda.medidemo.fi
+        # NOTE: keep the resources in order!
+        # The resources have references to one another.
+        # Add new resources to the end of the list.
+
+        resources:
+          - file: datasets/questionnaires/test-ques-1.json
