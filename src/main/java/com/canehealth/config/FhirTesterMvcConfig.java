@@ -23,6 +23,8 @@ public class FhirTesterMvcConfig extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/fonts/**").addResourceLocations("classpath:/fonts/");
         registry.addResourceHandler("/img/**").addResourceLocations("classpath:/img/");
         registry.addResourceHandler("/js/**").addResourceLocations("classpath:/js/");
+        registry.addResourceHandler("/profiles/**").addResourceLocations("classpath:/profiles/");
+
     }
 
 //    @Bean
