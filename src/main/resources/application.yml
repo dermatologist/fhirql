@@ -55,7 +55,7 @@ management:
 app:
     localUrls:
            - http://fhirtest.uhn.ca/baseDstu3
-           - http://sdk.canehealth.com/fhir/baseDstu3
+           - http://sdk.canehealth.com/fhir/fhir/baseDstu3
     data:
         feed_on_start: true
         headers:
