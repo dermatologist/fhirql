@@ -62,12 +62,16 @@ public class ResourceInjector implements DataInjector {
         } catch (final IOException e) {
             throw new RuntimeException("Unable to read data file", e);
         }
-        if (useUpdate) {
-            client.update().resource(resource).execute();
-        } else {
-            client.create().resource(resource).prettyPrint().encodedJson().execute();
+        try {
+            if (useUpdate) {
+                client.update().resource(resource).execute();
+            } else {
+                client.create().resource(resource).prettyPrint().encodedJson().execute();
+            }
+            log.info("Finished injecting: {}", sourceFile);
+        }catch(Exception e){
+            log.info("Rest Server not initiated");
         }
-        log.info("Finished injecting: {}", sourceFile);
     }
 
 }
