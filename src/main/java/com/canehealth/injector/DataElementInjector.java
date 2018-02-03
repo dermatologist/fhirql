@@ -23,12 +23,12 @@ public class DataElementInjector {
     private final Logger log = LoggerFactory.getLogger(DataElementInjector.class);
 
     @Value("${spring.application.uri}")
-    private String uri = "http://canehealth.com/fhirform/";
+    protected String uri = "http://canehealth.com/fhirform/";
 
     @Value("${spring.application.demap}")
-    private String demap = "http://hl7.org/fhir/StructureDefinition/questionnaire-deMap";
+    protected String demap = "http://hl7.org/fhir/StructureDefinition/questionnaire-deMap";
 
-    private Questionnaire newQ;
+    protected Questionnaire newQ;
 
     /**
      * Injects the dataElement into a questionnaire if it contains demap extension
