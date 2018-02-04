@@ -12,6 +12,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +31,19 @@ public class DataElementInterceptor extends DataElementInjector {
         this.fhirClient = fhirClient;
     }
 
+    /* function to check if url valid */
+    private static boolean urlValidator(String url) {
+        /*validating url*/
+        try {
+            new URL(url).toURI();
+            return true;
+        } catch (URISyntaxException exception) {
+            return false;
+        } catch (MalformedURLException exception) {
+            return false;
+        }
+    }
+
     @Override
     public Questionnaire.QuestionnaireItemComponent inspect(Questionnaire.QuestionnaireItemComponent item) {
         List<Extension> extensions = new ArrayList();
@@ -42,7 +58,12 @@ public class DataElementInterceptor extends DataElementInjector {
             // If demap extension value has uri, process it
             if (extension_value.contains(uri)) {
                 log.info("Reading Extension: {}", extension_value);
-                DataElement dataElement = fhirClient.read().resource(DataElement.class).withUrl(uri).execute();
+                DataElement dataElement;
+                if (urlValidator(uri)) {
+                    dataElement = fhirClient.read().resource(DataElement.class).withUrl(uri).execute();
+                } else {
+                    dataElement = fhirClient.read().resource(DataElement.class).withId(uri).execute();
+                }
                 log.info("About to inject: {}", uri);
                 final FhirContext ctx = FhirContext.forDstu3();
                 ctx.setParserErrorHandler(new StrictErrorHandler());
