@@ -21,8 +21,8 @@ import static org.mockito.Mockito.mock;
 
 public class DatasetInitializerTest {
 
-    private final String resourceInjector = "fi.oda.phr.dataset.ResourceInjector";
-    private final String foobarInjector = "fi.oda.phr.dataset.Foobar";
+    private final String resourceInjector = "com.canehealth.injector.ResourceInjector";
+    private final String foobarInjector = "com.canehealth.injector.Foobar";
     @Rule
     public ExpectedException thrown = ExpectedException.none();
     private IGenericClient fhirClient;
@@ -66,7 +66,7 @@ public class DatasetInitializerTest {
         dataConfig.setResources(injectors);
         thrown.expect(RuntimeException.class);
         thrown.expectCause(isA(ClassNotFoundException.class));
-        thrown.expectMessage("java.lang.ClassNotFoundException: fi.oda.phr.dataset.Foobar");
+        thrown.expectMessage("java.lang.ClassNotFoundException: com.canehealth.injector.Foobar");
         datasetInitializer = new DatasetInitializer(fhirClient, dataConfig, "true");
         datasetInitializer.parseDatasets(dataConfig);
 
