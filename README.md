@@ -24,3 +24,7 @@ mvn spring-boot:run
 ```
 
 * Access at http://localhost:8080/fhir
+
+## Author
+
+Bell Eapen (McMaster U)
