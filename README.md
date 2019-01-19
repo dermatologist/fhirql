@@ -25,6 +25,15 @@ mvn spring-boot:run
 
 * Access at http://localhost:8080/fhir
 
+## Docker
+
+Pre-build docker container of overlay branch is available for testing and can be deployed using the following command. Access it at http://localhost/fhirql
+(Docker container is for testing only.)
+
+```
+docker run -d --name fhirserver -p 80:8080 beapen/fhir
+```
+
 ## Author
 
 Bell Eapen (McMaster U)

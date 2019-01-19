@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<div th:fragment="banner" class="well">
+    <th:block th:if="${serverId} == 'home'">
+        <p>
+            This server provides a nearly complete implementation of the FHIR Specification
+            using a 100% open source software stack <a href="http://hapifhir.io/">HAPI FHIR</a>
+        </p>
+        <p>
+            The GitHub repository is at <a href="https://github.com/dermatologist/fhirql">https://github.com/dermatologist/fhirql</a>
+            (Overlay branch).
+        </p>
+    </th:block>
+    <th:block th:if="${serverId} != 'home'">
+        <p>
+            This is not a production server and it provides no privacy. Do not store any confidential data here.
+        </p>
+    </th:block>
+    <p>
+    <p>
+        This is not a production server and it provides no privacy. Do not store any confidential data here.
+    </p>
+    </p>
+</div>
+</html>
