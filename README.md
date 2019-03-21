@@ -6,11 +6,12 @@
 * overlay: FHIR server with the client overlay using spring-boot
 * injector: Injects resources from a file.
 * interceptor: Injects a DataElement demap extension reference into a Questionnaire resource.
-* editor: Adds FRED (Fhir resource editor) to the fhir-server. FRED is a project by 'Smart Health IT' ( https://github.com/smart-on-fhir/fred ). Within this ecosystem, FRED can edit resources on the server. (Work in progress)
 * develop: main development branch
-* ... expect in the future:
-* graphql: A Graphql adapter for 
 
+## Other projects using this as server
+
+* [:fire: The FHIRForm framework for managing healthcare eForms](https://github.com/E-Health/fhirform)
+* [:eyes: Drishti | An mHealth sense-plan-act framework!](https://github.com/E-Health/drishti)
 ## Requirements
 
 * java 8
