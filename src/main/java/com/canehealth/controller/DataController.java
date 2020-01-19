@@ -20,7 +20,7 @@ public class DataController {
         this.dataInitializer = dataInitializer;
     }
 
-//    @RequestMapping(value = "/fhir/baseDstu3/metadata", method = RequestMethod.POST)
+//    @RequestMapping(value = "/fhir/baseR4/metadata", method = RequestMethod.POST)
 //    public void initData(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
 //        log.debug("Feeding data...");
 //        //dataInitializer.feedData(dataInitializer.parseDatasets(dataConfig), fhirClient);
