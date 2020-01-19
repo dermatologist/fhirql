@@ -61,7 +61,7 @@ public class ServerConfig {
 
     @Bean
     public FhirConfig fhirConfig() {
-        return new FhirConfig(FhirVersionEnum.DSTU3, "baseR4", 60000);
+        return new FhirConfig(FhirVersionEnum.R4, "baseR4", 60000);
     }
 
     @Bean
