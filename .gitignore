@@ -126,3 +126,7 @@ local.properties
 /build/
 .classpath
 /gradlew
+/src/main/resources/js/bundle.js
+/src/main/resources/FHIRForms/
+
+**/.factorypath
