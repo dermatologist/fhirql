@@ -21,9 +21,17 @@ Fhirql is a spring boot adaptation of hapi fhir server. This can be used as a te
 ```
 git clone https://github.com/dermatologist/fhirql.git
 mvn spring-boot:run
+
 ```
 
 * Access UI at http://localhost:8080/fhir and FHIR BASE at http://localhost:8080/fhir/fhir
+
+## How to extend
+
+* This uses spring boot Web.
+* Override the default UI by adding files with the same name to WEB-INF/templates (Thymeleaf).
+* For example this application overrides tmpl-head.html and tmpl-home-welcome.html
+* The list of original templates are [here](https://github.com/jamesagnew/hapi-fhir/tree/master/hapi-fhir-testpage-overlay/src/main/webapp/WEB-INF/templates) 
 
 ## Docker
 
