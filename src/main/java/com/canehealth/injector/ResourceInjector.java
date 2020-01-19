@@ -6,7 +6,7 @@ import ca.uhn.fhir.parser.StrictErrorHandler;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
 import com.canehealth.config.DataConfig;
 import com.canehealth.service.InjectorService;
-import org.hl7.fhir.dstu3.model.Questionnaire;
+import org.hl7.fhir.r4.model.Questionnaire;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,7 +42,7 @@ public class ResourceInjector implements DataInjector {
     @Override
     public void inject(IGenericClient client) {
         log.info("About to inject: {}", sourceFile);
-        final FhirContext ctx = FhirContext.forDstu3();
+        final FhirContext ctx = FhirContext.forR4();
         ctx.setParserErrorHandler(new StrictErrorHandler());
         final IParser parser;
         if (sourceFile.toLowerCase().endsWith(".xml")) {

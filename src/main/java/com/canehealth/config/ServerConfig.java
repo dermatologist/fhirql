@@ -2,7 +2,7 @@ package com.canehealth.config;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.context.FhirVersionEnum;
-import ca.uhn.fhir.jpa.config.BaseJavaConfigDstu3;
+import ca.uhn.fhir.jpa.config.BaseJavaConfigR4;
 import ca.uhn.fhir.parser.IParser;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
 import ca.uhn.fhir.rest.client.api.IRestfulClientFactory;
@@ -10,8 +10,8 @@ import ca.uhn.fhir.rest.server.IServerAddressStrategy;
 import ca.uhn.fhir.rest.server.IncomingRequestAddressStrategy;
 import ca.uhn.fhir.rest.server.interceptor.IServerInterceptor;
 import com.canehealth.interceptor.DataElementResponseInterceptor;
-import org.hl7.fhir.dstu3.model.MetadataResource;
-import org.hl7.fhir.dstu3.model.StructureDefinition;
+import org.hl7.fhir.r4.model.MetadataResource;
+import org.hl7.fhir.r4.model.StructureDefinition;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,7 +26,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Paths;
 
 @Configuration
-@Import(BaseJavaConfigDstu3.class)
+@Import(BaseJavaConfigR4.class)
 public class ServerConfig {
 
     @Bean
@@ -51,7 +51,7 @@ public class ServerConfig {
     @Bean
     public IGenericClient fhirClient(FhirConfig config, @Value("${server.port}") String port,
                                      @Value("${server.contextPath}") String contextPath) {
-        final IRestfulClientFactory factory = FhirContext.forDstu3().getRestfulClientFactory();
+        final IRestfulClientFactory factory = FhirContext.forR4().getRestfulClientFactory();
 
         factory.setConnectTimeout(config.timeout);
         factory.setConnectionRequestTimeout(config.timeout);
@@ -61,7 +61,7 @@ public class ServerConfig {
 
     @Bean
     public FhirConfig fhirConfig() {
-        return new FhirConfig(FhirVersionEnum.DSTU3, "baseDstu3", 60000);
+        return new FhirConfig(FhirVersionEnum.DSTU3, "baseR4", 60000);
     }
 
     @Bean
@@ -72,7 +72,7 @@ public class ServerConfig {
 
 //    @Bean(autowire = Autowire.BY_TYPE)
 //    public IServerInterceptor subscriptionSecurityInterceptor() {
-//        return new SubscriptionsRequireManualActivationInterceptorDstu3();
+//        return new SubscriptionsRequireManualActivationInterceptorR4();
 //    }
 
     private <E extends MetadataResource> E loadResource(String file, IParser parser) {

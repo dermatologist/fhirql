@@ -45,7 +45,7 @@ public class FhirTesterConfig {
                 .addServer()
                 .withId("hapi")
                 .withFhirVersion(FhirVersionEnum.DSTU3)
-                .withBaseUrl("http://fhirtest.uhn.ca/baseDstu3")
+                .withBaseUrl("http://fhirtest.uhn.ca/baseR4")
                 .withName("Public HAPI Test Server");
 
         /*

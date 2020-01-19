@@ -34,7 +34,7 @@ spring:
       enabled: true
 hapi:
   fhir:
-    version: dstu3
+    version: r4
     server:
       path: /fhir/*
     rest:
@@ -56,8 +56,8 @@ management:
 
 app:
     localUrls:
-           - http://fhirtest.uhn.ca/baseDstu3
-           - http://sdk.canehealth.com/fhir/fhir/baseDstu3
+           - http://fhirtest.uhn.ca/baseR4
+           - http://sdk.canehealth.com/fhir/fhir/baseR4
     data:
         feed_on_start: true
         headers:

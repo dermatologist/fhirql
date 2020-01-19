@@ -4,7 +4,7 @@ import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.parser.IParser;
 import ca.uhn.fhir.parser.StrictErrorHandler;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
-import org.hl7.fhir.dstu3.model.*;
+import org.hl7.fhir.r4.model.*;
 import org.hl7.fhir.instance.model.api.IBaseDatatype;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.slf4j.Logger;
@@ -126,7 +126,7 @@ public class InjectorService {
         String sourceFile = extension_value.replace(uri, "FHIRForms/").concat(".json");
         // The segment below is from ResourceInjector.java
         log.info("About to inject: {}", sourceFile);
-        final FhirContext ctx = FhirContext.forDstu3();
+        final FhirContext ctx = FhirContext.forR4();
         ctx.setParserErrorHandler(new StrictErrorHandler());
         final IParser parser;
         if (sourceFile.toLowerCase().endsWith(".xml")) {
@@ -159,7 +159,7 @@ public class InjectorService {
             dataElement = fhirClient.read().resource(DataElement.class).withId(uri).execute();
         }
         log.info("About to inject: {}", uri);
-        final FhirContext ctx = FhirContext.forDstu3();
+        final FhirContext ctx = FhirContext.forR4();
         ctx.setParserErrorHandler(new StrictErrorHandler());
         final IParser parser = ctx.newJsonParser();
         parser.setPrettyPrint(true);
