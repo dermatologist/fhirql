@@ -4,3 +4,6 @@
 
 ## [Templates to override](https://github.com/jamesagnew/hapi-fhir/tree/master/hapi-fhir-testpage-overlay/src/main/webapp/WEB-INF/templates)
 
+
+mvn spring-boot:run -DsocksProxyHost=127.0.0.1 -DsocksProxyPort=9090 -X
+
