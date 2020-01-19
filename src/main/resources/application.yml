@@ -1,12 +1,14 @@
 server:
-    port: 8080
-    use-forward-headers: true
-    session:
-        cookie:
-            http-only: true
-    contextPath: /fhir
-    tomcat:
-      max-threads: 600
+  port: 8093
+  use-forward-headers: true
+  session:
+    cookie:
+        http-only: true
+  contextPath: /fhir
+  servlet:
+    context-path: /fhir
+  tomcat:
+    max-threads: 600
 
 spring:
   application:
