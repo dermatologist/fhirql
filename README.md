@@ -4,8 +4,9 @@
 
 Fhirql is a spring boot adaptation of hapi fhir server. This can be used as a template for extending generic FHIR server for specific use cases. See the example projects below. I have updated it to FHIR-R4 and spring-boot 2.2. 
 
+## FHIR® R4 (HL7 Fast Healthcare Interoperability Resources, Release 4) 
 
-## Other projects using this as server
+## Other projects that using this as backend
 
 * [:fire: The FHIRForm framework for managing healthcare eForms](https://github.com/E-Health/fhirform)
 * [:eyes: Drishti | An mHealth sense-plan-act framework!](https://github.com/E-Health/drishti)
@@ -22,7 +23,7 @@ git clone https://github.com/dermatologist/fhirql.git
 mvn spring-boot:run
 ```
 
-* Access at http://localhost:8080/
+* Access UI at http://localhost:8080/fhir and FHIR BASE at http://localhost:8080/fhir/fhir
 
 ## Docker
 
@@ -35,4 +36,4 @@ docker run -d --name fhirserver -p 8080:8080 beapen/fhir
 
 ## Author
 
-Bell Eapen (McMaster U)
+[Bell Eapen](https://nuchange.ca)
