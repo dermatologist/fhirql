@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>ca.uhn.hapi.fhir</groupId>
 		<artifactId>hapi-fhir</artifactId>
-        <version>4.1.0</version>
+        <version>5.1.0</version>
 	</parent>
 
 	<groupId>com.canehealth</groupId>
@@ -17,7 +17,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.build.timestamp.format>EEE, MMM dd yyyy, HH:mm Z</maven.build.timestamp.format>
-		<spring.boot.version>2.2.1.RELEASE</spring.boot.version>
+		<spring.boot.version>2.3.4.RELEASE</spring.boot.version>
 	</properties>
 
 	<dependencies>
@@ -92,15 +92,15 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
-			<optional>true</optional>
 			<version>${spring.boot.version}</version>
+			<optional>true</optional>
 		</dependency>
 		<!-- Test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
 			<version>${spring.boot.version}</version>
+			<scope>test</scope>
 		</dependency>
         <dependency>
             <groupId>ca.uhn.hapi.fhir</groupId>
