@@ -1,4 +1,4 @@
-package com.canehealth.config;
+package com.canehealth.fhirql.config;
 
 import ca.uhn.fhir.context.FhirVersionEnum;
 import ca.uhn.fhir.to.TesterConfig;
