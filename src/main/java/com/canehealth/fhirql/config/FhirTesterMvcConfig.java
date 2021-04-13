@@ -9,8 +9,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "ca.uhn.fhir.to" }, excludeFilters = {
-@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = ca.uhn.fhir.to.FhirTesterMvcConfig.class) })
+@ComponentScan(basePackages = {"ca.uhn.fhir.to"},
+        excludeFilters = {
+                @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = ca.uhn.fhir.to.FhirTesterMvcConfig.class)})
 public class FhirTesterMvcConfig extends WebMvcConfigurerAdapter {
     public FhirTesterMvcConfig() {
     }
@@ -26,5 +27,35 @@ public class FhirTesterMvcConfig extends WebMvcConfigurerAdapter {
 
     }
 
+//    @Bean
+//    public SpringResourceTemplateResolver templateResolver() {
+//        SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
+//        resolver.setPrefix("/WEB-INF/templates/");
+//        resolver.setSuffix(".html");
+//        resolver.setTemplateMode(TemplateMode.HTML);
+//        resolver.setCharacterEncoding("UTF-8");
+//        return resolver;
+//    }
+//
+//    @Bean
+//    public AnnotationMethodHandlerAdapterConfigurer annotationMethodHandlerAdapterConfigurer() {
+//        return new AnnotationMethodHandlerAdapterConfigurer();
+//    }
+//
+//    @Bean
+//    public ThymeleafViewResolver viewResolver() {
+//        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
+//        viewResolver.setTemplateEngine(templateEngine());
+//        viewResolver.setCharacterEncoding("UTF-8");
+//        return viewResolver;
+//    }
+//
+//    @Bean
+//    public SpringTemplateEngine templateEngine() {
+//        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
+//        templateEngine.setTemplateResolver(templateResolver());
+//
+//        return templateEngine;
+//    }
 
 }
