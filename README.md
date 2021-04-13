@@ -2,7 +2,7 @@
 
 ## What is fhirql
 
-Fhirql is a spring boot adaptation of hapi fhir server. This can be used as a template for extending generic FHIR server for specific use cases. See the example projects below. I have updated it to FHIR-R4 and spring-boot 2.2. 
+Fhirql is a spring boot adaptation of hapi fhir server. This can be used as a template for extending generic FHIR server for specific use cases. See the example projects below. I have updated it to FHIR-R4 and spring-boot 2.4. 
 
 ## FHIR® R4 (HL7 Fast Healthcare Interoperability Resources, Release 4) 
 
@@ -13,7 +13,7 @@ Fhirql is a spring boot adaptation of hapi fhir server. This can be used as a te
 
 ## Requirements
 
-* java 8
+* java 13
 * maven 3
 
 ## How to Use:
