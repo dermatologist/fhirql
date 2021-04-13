@@ -1,4 +1,4 @@
-package com.canehealth.injector;
+package com.canehealth.fhirql.injector;
 
 
 import ca.uhn.fhir.rest.client.api.IGenericClient;

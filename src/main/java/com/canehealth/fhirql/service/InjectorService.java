@@ -1,32 +1,18 @@
-package com.canehealth.service;
+package com.canehealth.fhirql.service;
 
-import ca.uhn.fhir.context.FhirContext;
-import ca.uhn.fhir.parser.IParser;
-import ca.uhn.fhir.parser.StrictErrorHandler;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
 import org.hl7.fhir.r4.model.*;
 import org.hl7.fhir.instance.model.api.IBaseDatatype;
-import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class InjectorService {
     private final Logger log = LoggerFactory.getLogger(InjectorService.class);
-    private final IGenericClient fhirClient;
     @Value("${spring.application.uri}")
     protected String uri = "http://canehealth.com/fhirform/";
     @Value("${spring.application.demap}")
@@ -34,20 +20,6 @@ public class InjectorService {
 
     public InjectorService(IGenericClient fhirClient) {
         super();
-        this.fhirClient = fhirClient;
-    }
-
-    /* function to check if url valid */
-    private static boolean urlValidator(String url) {
-        /*validating url*/
-        try {
-            new URL(url).toURI();
-            return true;
-        } catch (URISyntaxException exception) {
-            return false;
-        } catch (MalformedURLException exception) {
-            return false;
-        }
     }
 
     public Questionnaire processQuestionnaire(Questionnaire questionnaire) {
@@ -97,7 +69,7 @@ public class InjectorService {
     }
 
     private List<Extension> getDemaps(Questionnaire.QuestionnaireItemComponent item) {
-        List<Extension> extensions = new ArrayList();
+        List<Extension> extensions = new ArrayList<Extension>();
         if (item.getExtensionsByUrl(demap) != null) {
             extensions = item.getExtensionsByUrl(demap);
         }

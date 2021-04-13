@@ -1,11 +1,11 @@
-package com.canehealth.injector;
+package com.canehealth.fhirql.injector;
 
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.parser.IParser;
 import ca.uhn.fhir.parser.StrictErrorHandler;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
-import com.canehealth.config.DataConfig;
-import com.canehealth.service.InjectorService;
+import com.canehealth.fhirql.config.DataConfig;
+import com.canehealth.fhirql.service.InjectorService;
 import org.hl7.fhir.r4.model.Questionnaire;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 import org.slf4j.Logger;

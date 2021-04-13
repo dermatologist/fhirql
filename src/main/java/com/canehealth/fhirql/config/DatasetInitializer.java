@@ -1,8 +1,8 @@
-package com.canehealth.config;
+package com.canehealth.fhirql.config;
 
 import ca.uhn.fhir.rest.client.api.IGenericClient;
-import com.canehealth.injector.DataInjector;
-import com.canehealth.injector.ResourceInjector;
+import com.canehealth.fhirql.injector.DataInjector;
+import com.canehealth.fhirql.injector.ResourceInjector;
 import org.apache.commons.lang3.ObjectUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,20 +31,9 @@ public class DatasetInitializer implements ApplicationListener<ApplicationReadyE
 
     private final String useUpdateDefault = "true";
 
-    private final DataConfig dataConfig;
-
-    private final IGenericClient fhirClient;
-
-    private boolean runDataOnStart = false;
-
     public DatasetInitializer(IGenericClient fhirClient, DataConfig dataConfig,
                               @Value("${app.data.feed_on_start}") String runDataOnStart) {
-        this.runDataOnStart = Boolean.valueOf(runDataOnStart);
-        this.fhirClient = fhirClient;
-        this.dataConfig = dataConfig;
-//        if (dataConfig.getHeaders() != null) {
-//            fhirClient.registerInterceptor(new HeaderInjectingInterceptor(dataConfig.getHeaders()));
-//        }
+        Boolean.valueOf(runDataOnStart);
     }
 
     public List<DataInjector> parseDatasets(
@@ -69,10 +58,7 @@ public class DatasetInitializer implements ApplicationListener<ApplicationReadyE
 
     @Override
     public void onApplicationEvent(ApplicationReadyEvent event) {
-        if (runDataOnStart) {
-            //TODO: check this.
-            //feedData(parseDatasets(dataConfig), fhirClient);
-        }
+
     }
 
     public void feedData(List<DataInjector> datasets, IGenericClient fhirClient) {
