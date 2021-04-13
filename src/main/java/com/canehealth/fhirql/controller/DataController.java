@@ -1,8 +1,8 @@
 package com.canehealth.fhirql.controller;
 
 import ca.uhn.fhir.rest.client.api.IGenericClient;
-import com.canehealth.config.DataConfig;
-import com.canehealth.config.DatasetInitializer;
+import com.canehealth.fhirql.config.DataConfig;
+import com.canehealth.fhirql.config.DatasetInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,11 +20,4 @@ public class DataController {
         this.dataInitializer = dataInitializer;
     }
 
-//    @RequestMapping(value = "/fhir/baseR4/metadata", method = RequestMethod.POST)
-//    public void initData(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
-//        log.debug("Feeding data...");
-//        //dataInitializer.feedData(dataInitializer.parseDatasets(dataConfig), fhirClient);
-//        httpServletResponse.setStatus(HttpServletResponse.SC_OK);
-//        log.debug("Done");
-//    }
 }
