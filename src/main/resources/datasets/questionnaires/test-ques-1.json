@@ -1,0 +1,1673 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "223512",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2017-09-11T04:53:08.507-04:00"
+  },
+  "version": "1.0",
+  "title": "ROS",
+  "status": "active",
+  "item": [
+    {
+      "linkId": "1.1",
+      "prefix": "Constitutional",
+      "text": "Fever",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "1.2",
+      "prefix": "Constitutional",
+      "text": "Chills",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "1.3",
+      "prefix": "Constitutional",
+      "text": "Sweats",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "1.4",
+      "prefix": "Constitutional",
+      "text": "Weakness",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "1.5",
+      "prefix": "Constitutional",
+      "text": "Fatigue",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "1.6",
+      "prefix": "Constitutional",
+      "text": "Decreased Activity",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "2.1",
+      "prefix": "Eye",
+      "text": "Recent Visual Problem",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "2.2",
+      "prefix": "Eye",
+      "text": "Icterus",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "2.3",
+      "prefix": "Eye",
+      "text": "Discharge",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "2.4",
+      "prefix": "Eye",
+      "text": "Blurring",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "2.5",
+      "prefix": "Eye",
+      "text": "Double Vision",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "2.6",
+      "prefix": "Eye",
+      "text": "Visual Disturbances",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "3.1",
+      "prefix": "ENMT",
+      "text": "Decreased Hearing",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "3.2",
+      "prefix": "ENMT",
+      "text": "Ear Pain",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "3.3",
+      "prefix": "ENMT",
+      "text": "Nasal Condestion",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "3.4",
+      "prefix": "ENMT",
+      "text": "Sore Throat",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "4.1",
+      "prefix": "Respiratory",
+      "text": "SOB",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "4.2",
+      "prefix": "Respiratory",
+      "text": "Cough",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "4.3",
+      "prefix": "Respiratory",
+      "text": "Sputum procduction",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "4.4",
+      "prefix": "Respiratory",
+      "text": "Hemoptysis",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "4.5",
+      "prefix": "Respiratory",
+      "text": "Wheezing",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "4.6",
+      "prefix": "Respiratory",
+      "text": "Cyanosis",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "4.7",
+      "prefix": "Respiratory",
+      "text": "Apnea",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "5.1",
+      "prefix": "Endocrine",
+      "text": "Polyuria",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "5.2",
+      "prefix": "Endocrine",
+      "text": "Cold Intolerance",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "5.3",
+      "prefix": "Endocrine",
+      "text": "Heat Intolerance",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "5.4",
+      "prefix": "Endocrine",
+      "text": "Excessive Hunger",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "6.1",
+      "prefix": "Cardiovascular",
+      "text": "Chest Pain",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "6.2",
+      "prefix": "Cardiovascular",
+      "text": "Palpitations",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "6.3",
+      "prefix": "Cardiovascular",
+      "text": "Bradycardia",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "6.4",
+      "prefix": "Cardiovascular",
+      "text": "Tachycardia",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "6.5",
+      "prefix": "Cardiovascular",
+      "text": "Peripheral Endema",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "6.6",
+      "prefix": "Cardiovascular",
+      "text": "Syncope",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "7.1",
+      "prefix": "Gastrointestinal",
+      "text": "Nausea",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "7.2",
+      "prefix": "Gastrointestinal",
+      "text": "Vomiting",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "7.3",
+      "prefix": "Gastrointestinal",
+      "text": "Diarrhea",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "7.4",
+      "prefix": "Gastrointestinal",
+      "text": "Constipation",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "7.5",
+      "prefix": "Gastrointestinal",
+      "text": "Heartburn",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "7.6",
+      "prefix": "Gastrointestinal",
+      "text": "Abdominal Pain",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "7.7",
+      "prefix": "Gastrointestinal",
+      "text": "Hematemesis",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "8.1",
+      "prefix": "Genitourinary",
+      "text": "Dysuria",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "8.2",
+      "prefix": "Genitourinary",
+      "text": "Hematuria",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "8.3",
+      "prefix": "Genitourinary",
+      "text": "Chnage In Urine Stream",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "8.4",
+      "prefix": "Genitourinary",
+      "text": "Urethral Discharge",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "8.5",
+      "prefix": "Genitourinary",
+      "text": "Lesions",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "9.1",
+      "prefix": "Hema/Lymph",
+      "text": "Bruicing Tendency",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "9.2",
+      "prefix": "Hema/Lymph",
+      "text": "Bledding Tendency",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "9.3",
+      "prefix": "Hema/Lymph",
+      "text": "Sputum Production",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "9.4",
+      "prefix": "Hema/Lymph",
+      "text": "Swollen Lymph Glands",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "10.1",
+      "prefix": "Immunological",
+      "text": "Immunocompromised",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "10.2",
+      "prefix": "Immunological",
+      "text": "Recurrent Fevers",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "10.3",
+      "prefix": "Immunological",
+      "text": "Recurrent Production",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "10.4",
+      "prefix": "Immunological",
+      "text": "Malaise",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "11.1",
+      "prefix": "Musculoskeletal",
+      "text": "Back Pain",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "11.2",
+      "prefix": "Musculoskeletal",
+      "text": "Neck Pain",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "11.3",
+      "prefix": "Musculoskeletal",
+      "text": "Joint Pain",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "11.4",
+      "prefix": "Musculoskeletal",
+      "text": "Muscle Pain",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "11.5",
+      "prefix": "Musculoskeletal",
+      "text": "Claudication",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "11.6",
+      "prefix": "Musculoskeletal",
+      "text": "Decreases Rom",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "11.7",
+      "prefix": "Musculoskeletal",
+      "text": "Trauma",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.1",
+      "prefix": "Integumentary",
+      "text": "Rash",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.2",
+      "prefix": "Integumentary",
+      "text": "Pruritus",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.3",
+      "prefix": "Integumentary",
+      "text": "Abrasions",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.4",
+      "prefix": "Integumentary",
+      "text": "Breakdown",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.5",
+      "prefix": "Integumentary",
+      "text": "Burns",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.6",
+      "prefix": "Integumentary",
+      "text": "Dryness",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.7",
+      "prefix": "Integumentary",
+      "text": "Petechiae",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.8",
+      "prefix": "Integumentary",
+      "text": "Skin Lesions",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.9",
+      "prefix": "Integumentary",
+      "text": "Hypertophic Scar",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.10",
+      "prefix": "Integumentary",
+      "text": "Keloid",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "12.11",
+      "prefix": "Integumentary",
+      "text": "No Other Sig Skin Complaints",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "13.1",
+      "prefix": "Neurological",
+      "text": "Alert & Oriented x4",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "13.2",
+      "prefix": "Neurological",
+      "text": "Abnormal Balance",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "13.3",
+      "prefix": "Neurological",
+      "text": "Confusion",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "13.4",
+      "prefix": "Neurological",
+      "text": "Numbness",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "13.5",
+      "prefix": "Neurological",
+      "text": "Tingling",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "13.6",
+      "prefix": "Neurological",
+      "text": "Headache",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "14.1",
+      "prefix": "Psychatric",
+      "text": "Anxiety",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "14.2",
+      "prefix": "Psychatric",
+      "text": "Depression",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "14.3",
+      "prefix": "Psychatric",
+      "text": "Mania",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "14.4",
+      "prefix": "Psychatric",
+      "text": "Suicidal",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "14.5",
+      "prefix": "Psychatric",
+      "text": "Delusional",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    },
+    {
+      "linkId": "14.6",
+      "prefix": "Psychatric",
+      "text": "Hallucinations",
+      "type": "group",
+      "option": [
+        {
+          "valueString": "Yes"
+        },
+        {
+          "valueString": "No"
+        },
+        {
+          "valueString": "Yes-Pertinent"
+        },
+        {
+          "valueString": "No-Pertinent"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,22 @@
+server:
+  port: 8099
+  use-forward-headers: true
+  session:
+    cookie:
+        http-only: true
+  contextPath: /fhir
+  servlet:
+    context-path: /fhir
+  tomcat:
+    max-threads: 600
+
 spring:
+  application:
+    name: fhir
+    uri: http://canehealth.com/fhirform/
+    demap: http://hl7.org/fhir/StructureDefinition/questionnaire-deMap
+  thymeleaf:
+    prefix: classpath:/WEB-INF/templates/
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -23,7 +41,7 @@ hapi:
       path: /fhir/*
     rest:
       server-name: fhirql-server-jpa
-      server-version: 2.0.0
+      server-version: 1.0.0
       implementation-description: Spring Boot FhirQL Server
       default-response-encoding: json
       e-tag-support: enabled
@@ -38,6 +56,17 @@ management:
   security:
     enabled: false
 
-logging:
-  level:
-    ca.uhn.fhir.jaxrs: debug
+app:
+    localUrls:
+           - http://fhirtest.uhn.ca/baseR4
+           - http://sdk.canehealth.com/fhir/fhir/baseR4
+    data:
+        feed_on_start: true
+        headers:
+             ODA-INSTANCE-ID: oda.medidemo.fi
+        # NOTE: keep the resources in order!
+        # The resources have references to one another.
+        # Add new resources to the end of the list.
+
+        resources:
+          - file: datasets/questionnaires/test-ques-1.json
