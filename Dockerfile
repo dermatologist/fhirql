@@ -5,7 +5,7 @@ FROM openjdk:alpine
 ENV LC_ALL="en_US.utf8"
 
 # Copy jar-files
-COPY target/fhirql-1.0.0.jar /home/app.jar
+COPY target/fhirql-4.1.0.jar /home/app.jar
 
 # Set workdir
 WORKDIR /home
