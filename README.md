@@ -13,7 +13,7 @@ Fhirql is a spring boot adaptation of hapi fhir server. This can be used as a te
 
 ## Requirements
 
-* java 13
+* java >= 13
 * maven 3
 
 ## How to Use:
